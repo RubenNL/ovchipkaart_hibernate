@@ -12,9 +12,9 @@ public class Adres {
 	private String huisnummer;
 	private String straat;
 	private String woonplaats;
-	@OneToOne
-	@JoinColumn(name="reiziger_id")
-	private Reiziger reiziger;
+		@OneToOne
+		@JoinColumn(name="reiziger_id")
+		private Reiziger reiziger;
 
 	public Adres(int id, String postcode, String huisnummer, String straat, String woonplaats, Reiziger reiziger) {
 		this.id = id;
